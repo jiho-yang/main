@@ -25,7 +25,7 @@ header .header_go ul li a img{vertical-align: middle;padding-left: 5px;}
 
 
 /* header main-menu */
-header {width: 100%;padding: 0 0 180px; background: url("../img/pc_section01_2.jpg") no-repeat center / cover;}
+header {width: 100%;padding: 0 0 180px; background: url("../img/pc_section01_5.png") no-repeat center / cover;}
 header .header_wrap {width: 100%;padding: 40px 80px;box-sizing: border-box;display: flex;justify-content: space-between;}
 header .header_wrap ul {display: flex;justify-content: space-around;}
 header .header_wrap ul li a {display: inline-block;padding: 10px 25px;font-size: 18px;}

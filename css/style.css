@@ -11,11 +11,23 @@ header .tab_menu .list li.is_on .btn{font-weight:bold; color:#fff;}
 header .tab_menu .list li.is_on .cont{display:block;}
 header .tab_menu .list li a {display:inline-block;} */
 
+/* *{background-color: #3f4d34;} */
 
 
-
-header {display: flex;justify-content: space-around;align-items: center;position: fixed;top: 0;left: 0;right: 0;z-index: 1;padding: 25px 0;}
-header a{display: inline-block;font-size: 30px;}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 25px 0;
+    background-color: rgba(255, 255, 192, 0.1);
+    backdrop-filter: blur(10px);
+}
+header a{display: inline-block;font-size: 30px;font-weight: bold;}
 header ul{display: flex;justify-content: space-evenly;width: 20%;}
 
 .pro{height: 85vh;padding: 100px 0 0;}
@@ -40,5 +52,35 @@ header ul{display: flex;justify-content: space-evenly;width: 20%;}
 
 
 .content{width: 1300px;margin: 0 auto;padding: 100px 0;}
-.content .exp{display: flex;justify-content: space-evenly;}
-.content .exp ul li{font-size: 20px;margin-bottom: 30px;}
+.content h2{text-align: center;margin-bottom: 70px;font-size: 2rem;}
+/* .content .exp_wrap .exp{display: flex;justify-content: space-evenly;} */
+.content .exp_wrap{height: 85vh;}
+.content .exp_wrap .job_exp ul{display: flex;justify-content: space-around;margin-top: 50px;}
+.content .exp_wrap .job_exp ul li{font-size: 20px;text-align: center;font-weight: bold;position: relative;}
+.content .exp_wrap .job_exp ul.job_title{margin-top: 0;margin-bottom: 50px;}
+.content .exp_wrap .job_exp ul.job_title li::before{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #fff;
+    border: 0.5rem solid #8c8c8c;
+    border-radius: 50%;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+.content .exp_wrap .job_exp ul li span.point{font-weight: normal;color: #7ba7b0;}
+
+
+.content .exp_wrap .work_exp ul{display: flex;justify-content: space-evenly;margin-bottom: 70px;}
+.content .exp_wrap .work_exp ul li{width: 20%;text-align: center;}
+.content .exp_wrap .work_exp ul li a{display: inline-block;height: 140px;}
+.content .exp_wrap .work_exp ul li a img{width: 100%;height: 100%;border-radius: 10px;}
+
+
+.content .exp_wrap .popo_exp ul{display: flex;justify-content: space-evenly;margin-bottom: 70px;}
+.content .exp_wrap .popo_exp ul li{width: 20%;text-align: center;}
+.content .exp_wrap .popo_exp ul li a{display: inline-block;height: 140px;}
+.content .exp_wrap .popo_exp ul li a img{width: 100%;height: 100%;border-radius: 10px;}
