@@ -24,8 +24,8 @@ header ul{display: flex;justify-content: space-evenly;width: 20%;}
 
 /* main */
 main{height: 100vh;color: #fff;background: linear-gradient(#92a1c3, #bed1e3 80%);}
-main article{width: 1200px;margin: 0 auto;padding: 250px 0 150px;}
-main article .main_text{text-align: center;}
+main article{width: 1200px;height: 100%;margin: 0 auto;position: relative;}
+main article .main_text{width: 100%;text-align: center;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
 main article .main_text p span{display: inline-block;font-size: 120px;font-family: "Poetsen One", sans-serif;text-shadow: 2px 3px 7px #6587a1;animation: swaying 3s infinite ease-in-out;padding-bottom: 50px;}
 
 @keyframes swaying {
@@ -38,7 +38,7 @@ main article .main_text p span{display: inline-block;font-size: 120px;font-famil
 
 
 /* info */
-section.info_wrap{width: 100%;height: 90vh;color: #fff;background: linear-gradient(#bed1e3, #92a1c3 80%);/*background: linear-gradient(#bed1e3, #cca1c9 80%);*/}
+section.info_wrap{width: 100%;padding-bottom: 200px;color: #fff;background: linear-gradient(#bed1e3, #92a1c3 80%);/*background: linear-gradient(#bed1e3, #cca1c9 80%);*/}
 section.info_wrap .info{display: flex;justify-content: center;align-items: center;padding-top: 50px;}
 section.info_wrap .info .img_wrap{margin-right: 50px;}
 section.info_wrap .info .text_wrap{font-size: 25px;}
